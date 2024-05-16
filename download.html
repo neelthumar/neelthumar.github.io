@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="download.css">
+    <title>Download Movies - Movie Magic</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Movie Magic</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="download.html">Download Movies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="download-section">
+        <h2>Download Movies</h2>
+        <div class="movie-list" id="movie-list">
+            <!-- Example movie item -->
+            <div class="movie-item">
+                <h3>Movie Title</h3>
+                <video id="video1" controls>
+                    <source src="movie1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button onclick="skip(-10, 'video1')">Back 10s</button>
+                <button onclick="skip(10, 'video1')">Forward 10s</button>
+                <button onclick="toggleFullscreen('video1')">Fullscreen</button>
+                <a href="movie1.mp4" download="movie1.mp4">Download</a>
+            </div>
+            <!-- More movie items can be added similarly -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Rate Us</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <p>&copy; 2023 Movie Magic. All rights reserved.</p>
+    </footer>
+
+    <script src="download.js"></script>
+</body>
+
+</html>

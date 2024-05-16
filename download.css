@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+.logout-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Download Section */
+.download-section {
+    padding: 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.download-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.movie-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.movie-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.movie-item video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-item button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-item button:hover {
+    background-color: #e68a00;
+}
+
+.movie-item a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff9900;
+    transition: color 0.3s ease;
+}
+
+.movie-item a:hover {
+    color: #e68a00;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-media a,
+footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover,
+footer .footer-links a:hover {
+    color: #ff9900;
+}
+
+footer p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
