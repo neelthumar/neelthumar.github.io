@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+.logout-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+/* Additional Styles for Features and Other Sections */
+/* Add the styles here similar to the ones in the hero section */
+
+
+.features, .genre-explore, .user-engagement {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+}
+
+.feature-box {
+    width: 30%;
+    text-align: center;
+}
+
+.feature-box img {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.feature-box h2 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+.box-link {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .social-media a, footer .footer-links a {
+    margin: 0 10px;
+    color: #ff9900;
+    text-decoration: none;
+}
+
+footer .social-media a:hover, footer .footer-links a:hover {
+    color: #e68a00;
+}
