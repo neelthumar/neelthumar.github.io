@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         heroBackground.style.backgroundImage = images[currentImageIndex];
     }
 
-    setInterval(changeBackground, 3000);
+    setInterval(changeBackground, 5000);
 
     // Initial background setup
     heroBackground.style.backgroundImage = images[currentImageIndex];
