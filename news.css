@@ -12,6 +12,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #1c1c1c;
+    flex-wrap: wrap;
 }
 
 header .logo h1 {
@@ -48,15 +49,12 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
-    color: #fff;
-    height: 100dvb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    color: white;
+    padding: 100px 20px;
 }
 
 .hero-background {
@@ -65,24 +63,23 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
+    background: url('hero-image.jpg') center center/cover no-repeat;
     z-index: -1;
-    transition: background-image 1s ease-in-out;
 }
 
 .hero-content {
+    position: relative;
     z-index: 1;
 }
 
 .cta-button {
     background-color: #ff9900;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
@@ -90,31 +87,34 @@ nav ul li a:hover {
     background-color: #e68a00;
 }
 
-/* Additional Styles for Features and Other Sections */
-/* Add the styles here similar to the ones in the hero section */
-
-
+/* Feature Sections */
 .features, .genre-explore, .user-engagement {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 20px;
-    background-color: #1c1c1c;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #1e1e1e;
 }
 
 .feature-box {
-    width: 30%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    max-width: 300px;
+    flex: 1;
 }
 
 .feature-box img {
-    width: 200px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
-    
 }
 
 .feature-box h2 {
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
+    font-size: 22px;
 }
 
 .feature-box p {
@@ -122,13 +122,18 @@ nav ul li a:hover {
 }
 
 .box-link {
-    color: #ff9900;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
+    display: inline-block;
     margin-top: 10px;
+    text-decoration: none;
+    color: #ff9900;
+    transition: color 0.3s ease;
 }
 
+.box-link:hover {
+    color: #e68a00;
+}
+
+/* Footer */
 footer {
     background-color: #1c1c1c;
     padding: 20px;
@@ -139,15 +144,69 @@ footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-footer .social-media a, footer .footer-links a {
+footer .social-media a,
+footer .footer-links a {
+    color: #fff;
     margin: 0 10px;
-    color: #ff9900;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-footer .social-media a:hover, footer .footer-links a:hover {
-    color: #e68a00;
+footer .social-media a:hover,
+footer .footer-links a:hover {
+    color: #ff9900;
+}
+
+footer p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .features, .genre-explore, .user-engagement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .feature-box h2 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
